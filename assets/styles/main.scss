@@ -1,0 +1,43 @@
+@import 'variables/fonts';
+@import 'highlight.js/styles/github';
+@import 'github-markdown-css/github-markdown-light';
+
+html,
+body {
+  font-family: Roboto, Inter, Arial;
+  font-size: 8px;
+}
+
+.g {
+  &-container {
+    padding: 0 24px;
+    max-width: 894px;
+    margin: 0 auto;
+  }
+  &-section {
+  }
+}
+
+.page {
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+
+.markdown-body {
+  font-family: Inter, Roboto !important;
+}
+
+//h2 {
+//  font-size: 32px;
+//  font-weight: 600;
+//}
+//
+//p {
+//  font-size: 21px;
+//  line-height: 32px;
+//}
+//
+//pre.hljs {
+//  padding: 16px;
+//  overflow-x: scroll;
+//}

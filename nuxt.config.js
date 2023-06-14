@@ -1,4 +1,8 @@
 export default {
+  server: {
+    port: 2420,
+    host: '0.0.0.0',
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'style-guider',
@@ -18,6 +22,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/styles/main',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -37,10 +42,16 @@ export default {
     '@nuxtjs/axios',
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  serverMiddleware: [
+    {
+      path: '/api/v1/',
+      handler: '@/server/api.js',
+    },
+  ],
+
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: '/api',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
