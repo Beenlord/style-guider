@@ -1,6 +1,9 @@
 <template>
   <div class="page index-page">
     <div class="g-container">
+      <div class="g-section">
+        <div id="editorone" ></div><br/>
+      </div>
       <div class="g-section markdown-body" v-html="markdown"></div>
     </div>
   </div>
@@ -9,9 +12,12 @@
 <script>
 
 export default {
+  components: {
+  },
   data() {
     return {
       markdown: '',
+      content: '',
     };
   },
   mounted() {
