@@ -45,7 +45,7 @@ export default {
   serverMiddleware: [
     {
       path: '/api/v1/',
-      handler: '@/server/api.js',
+      handler: '@/server/index.js',
     },
   ],
 

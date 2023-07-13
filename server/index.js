@@ -4,7 +4,6 @@ const app = require('express')();
 // Server modules
 const md = require('./modules/readme-parser');
 
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -12,7 +11,7 @@ app
   .get('/', async (req, res) => {
     res.send({
       statusCode: 200,
-      data: await md.render('### TEST'),
+      data: '',
     });
     res.end();
   })
