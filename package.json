@@ -12,6 +12,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "body-parser": "^1.20.2",
     "core-js": "^3.25.3",
+    "directory-tree": "^3.5.1",
     "express": "^4.18.2",
     "github-markdown-css": "^5.2.0",
     "highlight.js": "^11.8.0",
